@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Aurora — Jesus May Ball 2018</title>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Open+Sans" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/auroral.min.css">
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+          crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+        <!-- https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js -->
+    </head>
+    <body>
+        <div class="dynamic-aurora-container">
+            <div class="auroral-northern"></div>
+            <div class="auroral-stars"></div>
+        </div>
+
+        <div id="header">
+            <img data-depth="0.2" id="horse" src="assets/images/horse-outline.png" />
+            <div data-depth="0.5" id="particles-js" class="particles"></div>
+            <div data-depth="0.8" id="particles-js-bg" class="particles"></div>
+        </div>
+
+        <div id="below-fold"></div>
+
+
+        <script src="assets/js/particles.min.js"></script>
+        <script>
+        window.onload = function() {
+            particlesJS.load('particles-js', 'assets/js/particles.json', null);
+            particlesJS.load('particles-js-bg', 'assets/js/particles-bg.json', null);
+            var scene = document.getElementById('header');
+            var parallaxInstance = new Parallax(scene, {
+              relativeInput: true
+            });
+        };
+        </script>
+    </body>
+</html>
