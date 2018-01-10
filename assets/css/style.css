@@ -15,6 +15,10 @@ text {
     font-weight: 700;
 }
 
+img {
+    background: none;
+}
+
 .dynamic-aurora-container {
     display: block; // if it is not a block element
     overflow: hidden;
@@ -36,7 +40,6 @@ text {
     /* https://media.giphy.com/media/3ohjUPVkkYezDsXDzy/giphy.gif */
     /* background-image: url("../images/aurora-sky.jpg"); */
     background-color: #170727;
-    background-image: url("https://media.giphy.com/media/xT1R9K7mFwzkraqKm4/giphy.gif");
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -179,4 +182,25 @@ text {
     height: 13em;
     display: block;
     overflow: visible;
+}
+
+#loading-screen {
+    background-color: #151515;
+    background: linear-gradient(-45deg, #14041d, #222);
+    z-index: 3000;
+    position: fixed;
+    top: -5%;
+    left: -5%;
+    height: 110%;
+    width: 110%;
+}
+
+#loading-screen img {
+    max-width: 280px;
+    z-index: 3001;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
 }

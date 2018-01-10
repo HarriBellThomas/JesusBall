@@ -39,6 +39,10 @@
         width: 22em;
         height: 16em;
     }
+
+    #loading-screen img {
+        max-width: 400px;
+    }
 }
 
 @media only screen and (-webkit-device-pixel-ratio : 2)
