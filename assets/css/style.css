@@ -2,11 +2,14 @@ html {
     background-color: #191919;
     font-family: "futura-pt", sans-serif !important;
     font-weight: 300;
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 body {
     margin: 0;
     width: 100%;
+    max-width: 100%;
     height: 100%;
     position: absolute;
 }
@@ -22,7 +25,7 @@ img {
 .dynamic-aurora-container {
     display: block; // if it is not a block element
     overflow: hidden;
-    opacity: 0.9;
+    opacity: 0.85;
     z-index: 1000;
     overflow: hidden;
     position: fixed;
@@ -37,9 +40,18 @@ img {
 #header-bg {
     position: fixed;
     z-index: 0;
+    background-color: #170727;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+#header-gif {
+    position: fixed;
+    z-index: 1;
     /* https://media.giphy.com/media/3ohjUPVkkYezDsXDzy/giphy.gif */
     /* background-image: url("../images/aurora-sky.jpg"); */
-    background-color: #170727;
+    display: none;
     background-size: cover;
     height: 100%;
     width: 100%;
@@ -51,6 +63,21 @@ img {
     z-index: 2000;
     height: 100%;
     width: 100%;
+}
+
+#backdrop {
+    position: relative;
+    z-index: 2000;
+    width: 100%;
+    padding: 3em;
+    height: 400px;
+    opacity: 0.6;
+    mix-blend-mode: normal;
+}
+
+.mix-blend-mode #backdrop {
+    mix-blend-mode: color;
+    opacity: 1;
 }
 
 #header #horse {
@@ -96,7 +123,7 @@ img {
     /* height: 2000px */
     padding: 40px;
     background-color: #151515;
-    background: linear-gradient(-45deg, #14041d, #222);
+    background: linear-gradient(-45deg, #230f2d, #0e0e0e)
     /* position: absolute; */
     /* top: 100%; */
 }
@@ -172,6 +199,16 @@ img {
   }
 }
 
+#aurora-title {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 5em;
+    margin: 0 auto;
+    width: 4em;
+    height: 2em;
+    display: block;
+    overflow: visible;
+}
 
 #heading-paragraph {
     padding-top: 40px;
@@ -193,6 +230,7 @@ img {
     left: -5%;
     height: 110%;
     width: 110%;
+    overflow: hidden;
 }
 
 #loading-screen img {
@@ -203,4 +241,28 @@ img {
     left: 50%;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
+}
+
+
+.video-background {
+    background: #000;
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: 5;
+}
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground { height: 300%; top: -100%; }
+}
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground { width: 300%; left: -100%; }
 }

@@ -63,7 +63,7 @@ to {
     background: linear-gradient(-20deg, rgba(26, 0, 192, .4) 40%, rgba(215, 0, 67, .4)), linear-gradient(60deg, #1a00c0 10%, #d70043);
 }
 .auroral-northern {
-    animation-name: b;
+    /* animation-name: b; */
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
