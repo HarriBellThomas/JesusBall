@@ -97,7 +97,7 @@
 
         <div class="dynamic-aurora-container">
             <div class="auroral-northern"></div>
-            <!-- <div class="auroral-stars"></div> -->
+            <div class="auroral-stars"></div>
         </div>
 
         <div style="position: fixed;z-index: 1999;width: 100%;height: 100%;background: linear-gradient(40deg, #a1d9b4 20%, #3b8ba9 40%, #1d003c 70%);opacity: 0.5;mix-blend-mode: color;mix-blend-mode: overlay;"></div>
@@ -190,11 +190,21 @@
                 if($("#loading-screen").length) {
                     $("#loading-screen").fadeOut(1000, function() {
                         $("#loading-screen").remove();
+                        var gif = new Image();
+                        // gif.src = "https://media.giphy.com/media/l0DAIi9ltgGem18fC/giphy.gif";
+                        gif.src = "https://media.giphy.com/media/xUNd9H3vsqXNyGl61O/giphy.gif";
+                        $(gif).imagesLoaded( function() {
+                            $('#header-gif').css('background-image', 'url("https://media.giphy.com/media/xUNd9H3vsqXNyGl61O/giphy.gif")');
+                            $('#header-gif').css('transform', 'transale3d(0,0,0)');
+                            $('#header-gif').fadeIn(2000, function() {
+                                //alert("gif setup");
+                            });
+                        });
                     });
                 }
             }
 
-            setTimeout(function(){ has_loaded; }, 4000);
+            setTimeout(function(){ has_loaded(); }, 4000);
 
             $(document).ready(function(){
                 $('html').smoothScroll(300);
@@ -203,20 +213,15 @@
                 sr.reveal('.reveal');
 
                 var gif = new Image();
-                gif.src = "https://media.giphy.com/media/xT1R9K7mFwzkraqKm4/giphy.gif";
-                $(gif).imagesLoaded( function() {
-                    $('#header-gif').css('background-image', 'url("https://media.giphy.com/media/xT1R9K7mFwzkraqKm4/giphy.gif")');
-                    $('#header-gif').fadeIn();
-                });
-
+                gif.src = "https://media.giphy.com/media/xUNd9H3vsqXNyGl61O/giphy.gif";
 
                 if(!window.mobilecheck()) {
                     particlesJS.load('particles-js', 'assets/js/particles.json', function() {
-                        particlesJS.load('particles-js-bg', 'assets/js/particles-bg.json', function() {
+                        //particlesJS.load('particles-js-bg', 'assets/js/particles-bg.json', function() {
                             var scene = $('.uniquemainheader').get(0);
                             var parallaxInstance = new Parallax(scene);
                             has_loaded();
-                        });
+                        //});
                     });
                 }
                 else {
@@ -244,7 +249,7 @@
                 // Chrome 1+
                 var isChrome = !!window.chrome && !!window.chrome.webstore;
 
-                if(isChrome || isFirefox) $('html').addClass('mix-blend-mode');
+                //if(isChrome || isFirefox) $('html').addClass('mix-blend-mode');
 
             	$('a[href^="#"]').on('click',function (e) {
                     e.preventDefault();
