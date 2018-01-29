@@ -1,5 +1,13 @@
+.gpu {
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
 html {
-    background-color: #191919;
+    background-color: #2b1a4d !important;
     font-family: "Montserrat", sans-serif !important;
     font-weight: 300;
     overflow-x: hidden;
@@ -196,16 +204,71 @@ img {
 }
 
 #aurora-title {
-    padding-top: 70px;
+    padding: 70px 0px 30px 0px;
     text-align: center;
-    font-size: 5em;
     margin: 0 auto;
-    width: 4em;
-    height: 2em;
     display: block;
-    overflow: visible;
-    font-family: "trajan-sans-pro", sans-serif !important;
-    font-weight: 900;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 100;
+    font-size: 3em;
+    color: #edc8ff;
+}
+
+#aurora-title.uk-heading-line>::after,
+#aurora-title.uk-heading-line>::before {
+    border-bottom: 1px solid #c094d6;
+}
+
+#entertainment-title {
+    padding: 70px 0px 30px 0px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 100;
+    font-size: 2em;
+    color: #e84d4b;
+}
+
+#entertainment-title.uk-heading-line>::after,
+#entertainment-title.uk-heading-line>::before {
+    border-bottom: 1px solid #ab3735;
+}
+
+.ent-name {
+    font-size: 2em;
+}
+
+#tickets-title {
+    padding: 70px 0px 30px 0px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 100;
+    font-size: 2em;
+    color: #d8a13b;
+}
+
+#tickets-title.uk-heading-line>::after,
+#tickets-title.uk-heading-line>::before {
+    border-bottom: 1px solid #946c23;
+}
+
+.ticket-card-header {
+    padding-bottom: 0px;
+    margin-bottom: 5px;
+}
+
+.ticket-card-price {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#intro-text {
+    font-weight: 100;
+    color: #9d75b1;
+    padding-bottom: 40px !important;
 }
 
 #heading-paragraph {
@@ -250,69 +313,12 @@ img {
     text-align: center;
     color: #76657d;
     margin-bottom: 0px;
+    font-weight: 100;
+    font-size: 0.8em;
 }
 
-.left-heading {
-    padding: 50px;
-    font-size: 4em;
-}
-
-.text-gradient-red-css,
-.text-gradient-red-css p {
-    color: #b15453;
-}
-
-.right-paragraph {
-    padding: 60px 40px;
-}
-
-.right-paragraph p {
-    font-size: 1.5em;
-    font-weight: 300;
-    line-height: 1.2em;
-}
-
-#entertainment-title {
-    padding-top: 40px;
-    text-align: center;
-    font-size: 2.5em;
-    margin: 0 auto;
-    width: 10em;
-    height: 3.5em;
-    display: block;
-    overflow: visible;
-    font-family: "trajan-sans-pro", sans-serif !important;
-    font-weight: 900;
-}
-
-
-.mdl-card.card-square {
+._3em-padding {
+    height: 3em;
     width: 100%;
-}
-
-.card-square > .mdl-card__title {
-    color: #fff;
-    height: 300px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-
-.card-title {
-    color: #401c02;
-    margin: 0;
-    padding: 0 10px;
-}
-
-.mdl-card.card-square .card-button {
-    /* background-color: #f00; */
-}
-
-.mdl-card.card-square .card-button .mdl-button__ripple-container {
-    padding: 0 10px;
-}
-
-.mdl-card.card-square .mdl-card__supporting-text p {
-    padding: 10px 10px;
-    margin-bottom: 0px;
+    display: block;
 }

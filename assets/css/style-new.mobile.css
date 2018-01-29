@@ -1,0 +1,118 @@
+@media (max-width: 900px)  {
+
+}
+
+@media only screen and (-webkit-device-pixel-ratio : 3)
+                   /* and (max-width: 1000px)
+                   and (orientation potrait)  */
+                   {
+    #below-fold {
+        /* background-color: red; */
+    }
+
+    #header #horse {
+        max-width: 400px;
+    }
+
+    #scroll-down a {
+        bottom: 240px;
+        height: 150px;
+    }
+
+    #scroll-down a span {
+        width: 90px;
+        height: 150px;
+        margin-left: -45px;
+    }
+
+    #scroll-down a span::before {
+        top: 30px;
+        width: 18px;
+        height: 18px;
+        margin-left: -9px;
+    }
+
+    #aurora-title {
+        font-size: 6em;
+    }
+
+    #intro-text {
+        font-size: 2em;
+        padding: 0 2em;
+    }
+
+    #loading-screen img {
+        max-width: 400px;
+    }
+
+    #footer p {
+        font-size: 2em;
+    }
+
+    .ent-name {
+        font-size: 4em;
+    }
+
+    .ent-card .uk-button-text {
+        font-size: 2em;
+    }
+
+    #entertainment-title, #tickets-title {
+        font-size: 4em;
+    }
+
+    .ticket-card-price {
+        font-size: 6em;
+    }
+
+    .ticket-card-header {
+        font-size: 3em;
+    }
+
+    .ticket-card p {
+        font-size: 2em;
+        padding: 1em;
+    }
+
+    .buy-tickets-button {
+        font-size: 2em !important;
+        padding: 0.4em !important;
+    }
+}
+
+
+@media only screen and (-webkit-device-pixel-ratio : 2)
+                   and (max-width: 1000px)
+                   and (orientation potrait) {
+    #below-fold {
+        /* background-color: green; */
+    }
+
+    #header #horse {
+        max-width: 300px;
+    }
+
+    #scroll-down a {
+        bottom: 160px;
+        height: 10px;
+    }
+
+    #scroll-down a span {
+        width: 60px;
+        height: 100px;
+        margin-left: -30px;
+    }
+
+    #scroll-down a span::before {
+        top: 20px;
+        width: 12px;
+        height: 12px;
+        margin-left: -6px;
+    }
+}
+
+/* @media only screen and (orientation : portrait)  {
+    #below-fold {
+        background-color: purple;
+    }
+} */
