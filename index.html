@@ -306,6 +306,8 @@
 
 <script>
 
+// gif.src = "https://media.giphy.com/media/l0DAIi9ltgGem18fC/giphy.gif";
+// gif.src = "https://media.giphy.com/media/xUNd9H3vsqXNyGl61O/giphy.gif";
 var bg_img_src = "assets/images/static-bg-aurora.jpg";
 
 function has_loaded(bg_img_src) {
@@ -313,12 +315,9 @@ function has_loaded(bg_img_src) {
         $("#loading-screen").fadeOut(1000, function() {
             $("#loading-screen").remove();
             var gif = new Image();
-            // gif.src = "https://media.giphy.com/media/l0DAIi9ltgGem18fC/giphy.gif";
-            // gif.src = "https://media.giphy.com/media/xUNd9H3vsqXNyGl61O/giphy.gif";
             gif.src = bg_img_src;
             $(gif).imagesLoaded( function() {
                 $('#header-gif').css('background-image', 'url("' + bg_img_src + '")');
-                // $('#header-gif').css('transform', 'translate3d(0,0,0)');
                 $('#header-gif').fadeIn(2000, function() {
                     //alert("gif setup");
                 });
@@ -326,61 +325,34 @@ function has_loaded(bg_img_src) {
         });
     }
 }
-
-setTimeout(function(){ has_loaded(bg_img_src); }, 4000);
+setTimeout(function(){ has_loaded(bg_img_src); }, 800);
 
 $(document).ready(function(){
-
     // Opera 8.0+
     var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
-
-    // Firefox 1.0+
-    var isFirefox = typeof InstallTrigger !== 'undefined';
-
+    var isFirefox = typeof InstallTrigger !== 'undefined'; // Firefox 1.0+
     // Safari 3.0+ "[object HTMLElementConstructor]"
     var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
-
-    // Internet Explorer 6-11
-    var isIE = /*@cc_on!@*/false || !!document.documentMode;
-
-    // Edge 20+
-    var isEdge = !isIE && !!window.StyleMedia;
-
-    // Chrome 1+
-    var isChrome = !!window.chrome && !!window.chrome.webstore;
+    var isIE = /*@cc_on!@*/false || !!document.documentMode; // Internet Explorer 6-11
+    var isEdge = !isIE && !!window.StyleMedia; // Edge 20+
+    var isChrome = !!window.chrome && !!window.chrome.webstore; // Chrome 1+
 
     if(true) bg_img_src = "https://media.giphy.com/media/26DMZudg7MXiXyUco/giphy.gif";
-
+    var img = new Image();
+    img.src = bg_img_src;
 
     $('html').smoothScroll(300);
 
     // window.sr = ScrollReveal();
     // sr.reveal('.reveal');
 
+    if(!window.mobilecheck()) particlesJS.load('particles-js', 'assets/js/particles.json', function() {});
+    else particlesJS.load('particles-js', 'assets/js/particles-mobile.json', function() {});
 
-
-    var img = new Image();
-    img.src = bg_img_src;
-
-    if(!window.mobilecheck()) {
-        particlesJS.load('particles-js', 'assets/js/particles.json', function() {
-            //particlesJS.load('particles-js-bg', 'assets/js/particles-bg.json', function() {
-            // var scene = $('.uniquemainheader').get(0);
-            // var parallaxInstance = new Parallax(scene);
-            has_loaded(bg_img_src);
-            //});
-        });
-    }
-    else {
-        particlesJS.load('particles-js', 'assets/js/particles-mobile.json', function() {
-            has_loaded(bg_img_src);
-        });
-    }
-
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-        console.log('smooth scroll?');
-    });
+    // $('a[href^="#"]').on('click',function (e) {
+    //     e.preventDefault();
+    //     console.log('smooth scroll?');
+    // });
 });
 
 
