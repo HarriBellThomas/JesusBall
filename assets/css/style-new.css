@@ -255,6 +255,22 @@ img {
     border-bottom: 1px solid #946c23;
 }
 
+#sponsors-title {
+    padding: 70px 0px 30px 0px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    font-family: "Montserrat", sans-serif !important;
+    font-weight: 100;
+    font-size: 2em;
+    color: #349a15;
+}
+
+#sponsors-title.uk-heading-line>::after,
+#sponsors-title.uk-heading-line>::before {
+    border-bottom: 1px solid #236d0d;
+}
+
 .ticket-card-header {
     padding-bottom: 0px;
     margin-bottom: 5px;
