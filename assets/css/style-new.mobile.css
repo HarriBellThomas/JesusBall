@@ -14,6 +14,10 @@
         max-width: 400px;
     }
 
+    #saturation-layer {
+        opacity: 0;
+    }
+
     #scroll-down a {
         bottom: 240px;
         height: 150px;
@@ -57,7 +61,11 @@
         font-size: 2em;
     }
 
-    #entertainment-title, #tickets-title {
+    #entertainment-title,
+    #tickets-title,
+    #sponsors-title,
+    #committee-title, 
+    #charities-title {
         font-size: 4em;
     }
 

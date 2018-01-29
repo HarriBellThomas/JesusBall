@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Aurora — Jesus May Ball 2018</title>
-    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png" />
     <!-- <link rel="stylesheet" href="https://use.typekit.net/mqj3ktg.css"> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/style-new.css">
@@ -30,15 +30,15 @@
     <div id="header-gif" class="gpu"></div>
 
     <div class="dynamic-aurora-container gpu">
-        <div class="auroral-northern" style="opacity:0.5;"></div>
-        <img style="width:100%; min-height:100%;" src="/assets/images/aurora-logo-bg.jpg" />
+        <div class="auroral-northern" style="opacity:0.6;"></div>
+        <img style="width:100%; min-height:100%;" src="assets/images/aurora-logo-bg.jpg" />
         <div class="auroral-stars"></div>
     </div>
 
     <!-- <div style="position: fixed;z-index: 1999;width: 100%;height: 100%;background: linear-gradient(40deg, #a1d9b4 20%, #3b8ba9 40%, #1d003c 70%);opacity: 0.5;mix-blend-mode: color;mix-blend-mode: overlay;"></div> -->
 
     <div id="header" class="uniquemainheader">
-        <img src="assets/images/saturation-layer.png" style="width:100%;height:100%;position:absolute;" />
+        <img id="saturation-layer" src="assets/images/saturation-layer.jpg" />
         <div id="horse-container"><img id="horse" src="assets/images/horse-outline.png" /></div>
         <div id="particles-container" style="width:100%;height:100%;"><div id="particles-js" class="particles"></div></div>
     </div>
@@ -48,51 +48,54 @@
 
     <!-- Introduction -->
     <div id="aurora" class="below-fold">
-        <div class="uk-container uk-container-expand">
-            <h1 id="aurora-title" class="uk-heading-line uk-text-center"><span>A U R O R A</span></h1>
-        </div>
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+            <div class="uk-container uk-container-expand">
+                <h1 id="aurora-title" class="uk-heading-line uk-text-center"><span>A U R O R A</span></h1>
+            </div>
 
-        <div id="intro-text" class="uk-container uk-container-small">
-            <p>The Jesus May Ball Committee is delighted to invite you to weave Between the Lines of our evening of literary discovery and adventure by joining us at the 2017 Jesus May Ball. Defeat a dragon, fall in love, and brave a gothic potion as you explore this year's extravaganza.</p>
-            <p>Prepare to experience a night like no other. As the sun sets on Jesus College on the 19th June, stroll freely across the ancient courts. Here you can sample a wide range of food from across the world, help yourself to a delicious cocktail or grab a glass of fizz, before settling down to catch some of our carefully selected acts. Or, if you desire a different pace, hurtle around in the dodgems and dance the night away in our DJ tent.</p>
-            <p>However you wish to spend your night, Jesus May Ball has something for you.</p>
+            <div id="intro-text" class="uk-container uk-container-small">
+                <p>The Jesus May Ball Committee is delighted to invite you to weave Between the Lines of our evening of literary discovery and adventure by joining us at the 2017 Jesus May Ball. Defeat a dragon, fall in love, and brave a gothic potion as you explore this year's extravaganza.</p>
+                <p>Prepare to experience a night like no other. As the sun sets on Jesus College on the 19th June, stroll freely across the ancient courts. Here you can sample a wide range of food from across the world, help yourself to a delicious cocktail or grab a glass of fizz, before settling down to catch some of our carefully selected acts. Or, if you desire a different pace, hurtle around in the dodgems and dance the night away in our DJ tent.</p>
+                <p>However you wish to spend your night, Jesus May Ball has something for you.</p>
+            </div>
         </div>
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="background-color: rgba(49, 4, 107, 0.85);height: 30em;">
-    </div>
+    <div id="other" class="backdrop" style="background-color: rgba(49, 4, 107, 0.85);height: 30em;"></div>
 
     <div id="entertainment" class="below-fold">
-        <div class="uk-container uk-container-expand">
-            <h1 id="entertainment-title" class="uk-heading-line uk-text-center"><span>ENTERTAINMENT</span></h1>
-        </div>
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+            <div class="uk-container uk-container-expand">
+                <h1 id="entertainment-title" class="uk-heading-line uk-text-center"><span>ENTERTAINMENT</span></h1>
+            </div>
 
-        <div class="uk-container uk-container-small" style="padding:30px 0;">
-            <div class="uk-child-width-1-2@l uk-child-width-1-1@m uk-text-center" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default ent-card">
-                        <div class="uk-card-header" style="padding:0;background-color:#521212;">
-                            <img src="assets/images/lauramvula.png" />
-                        </div>
-                        <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
-                            <p class="ent-name">Laura Mvula</p>
-                        </div>
-                        <div class="uk-card-footer">
-                            <a uk-toggle="target: #lauramvula-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
+            <div class="uk-container uk-container-small" style="padding:30px 0;">
+                <div class="uk-child-width-1-2@l uk-child-width-1-1@m uk-text-center" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default ent-card">
+                            <div class="uk-card-header" style="padding:0;background-color:#521212;">
+                                <img src="assets/images/lauramvula.png" />
+                            </div>
+                            <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
+                                <p class="ent-name">Laura Mvula</p>
+                            </div>
+                            <div class="uk-card-footer">
+                                <a uk-toggle="target: #lauramvula-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-default ent-card">
-                        <div class="uk-card-header" style="padding:0;background-color:#521212;">
-                            <img src="assets/images/bjukeboys.jpg" />
-                        </div>
-                        <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
-                            <p class="ent-name">B & The Jukeboys</p>
-                        </div>
-                        <div class="uk-card-footer">
-                            <a uk-toggle="target: #lauramvula-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
+                    <div>
+                        <div class="uk-card uk-card-default ent-card">
+                            <div class="uk-card-header" style="padding:0;background-color:#521212;">
+                                <img src="assets/images/bjukeboys.jpg" />
+                            </div>
+                            <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
+                                <p class="ent-name">B & The Jukeboys</p>
+                            </div>
+                            <div class="uk-card-footer">
+                                <a uk-toggle="target: #lauramvula-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -101,77 +104,177 @@
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="background-color: rgba(107, 4, 4, 0.85);height: 30em;">
-    </div>
+    <div id="other" class="backdrop" style="background-color: rgba(107, 4, 4, 0.85);height: 30em;"></div>
 
     <div id="entertainment" class="below-fold">
-
-        <div class="uk-container uk-container-expand">
-            <h1 id="tickets-title" class="uk-heading-line uk-text-center"><span>TICKETS</span></h1>
-        </div>
-
-        <div class="uk-container uk-container-small" style="padding:30px 0;">
-            <div class="uk-child-width-1-3@l uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
-                <div>
-                    <div class="uk-card uk-card-default uk-card-body ticket-card">
-                        <h3 class="uk-card-title ticket-card-header uk-text-center">Standard</h3>
-                        <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£150</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-primary uk-card-body ticket-card">
-                        <h3 class="uk-card-title ticket-card-header uk-text-center">Priority</h3>
-                        <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£170</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-                <div>
-                    <div class="uk-card uk-card-secondary uk-card-body ticket-card">
-                        <h3 class="uk-card-title ticket-card-header uk-text-center">Dining</h3>
-                        <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£190</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    </div>
-                </div>
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+            <div class="uk-container uk-container-expand">
+                <h1 id="tickets-title" class="uk-heading-line uk-text-center"><span>TICKETS</span></h1>
             </div>
-            <div style="width:100%">
-                <button class="uk-button uk-button-danger uk-button-large buy-tickets-button" style="margin:0 auto;display: block;margin-top: 30px;">Buy Tickets</button>
+
+            <div class="uk-container uk-container-small" style="padding:30px 0;">
+                <div class="uk-child-width-1-3@l uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
+                    <div>
+                        <div class="uk-card uk-card-default uk-card-body ticket-card">
+                            <h3 class="uk-card-title ticket-card-header uk-text-center">Standard</h3>
+                            <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£150</span></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-primary uk-card-body ticket-card">
+                            <h3 class="uk-card-title ticket-card-header uk-text-center">Priority</h3>
+                            <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£170</span></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-card uk-card-secondary uk-card-body ticket-card">
+                            <h3 class="uk-card-title ticket-card-header uk-text-center">Dining</h3>
+                            <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£190</span></h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div style="width:100%">
+                    <button class="uk-button uk-button-danger uk-button-large buy-tickets-button" style="margin:0 auto;display: block;margin-top: 30px;">Buy Tickets</button>
+                </div>
             </div>
         </div>
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="background-color: rgba(107, 71, 4, 0.85);height: 30em;">
-    </div>
+    <div id="other" class="backdrop" style="background-color: rgba(107, 71, 4, 0.85);height: 30em;"></div>
 
     <div id="sponsors" class="below-fold">
-        <div class="uk-container uk-container-expand">
-            <h1 id="sponsors-title" class="uk-heading-line uk-text-center"><span>SPONSORS</span></h1>
-        </div>
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+            <div class="uk-container uk-container-expand">
+                <h1 id="sponsors-title" class="uk-heading-line uk-text-center"><span>SPONSORS</span></h1>
+            </div>
 
-        <div class="uk-container uk-container-small" style="padding:30px 0;">
-            <div class="uk-child-width-1-3@s" uk-grid>
-                <div>
-                    <div class="uk-cover-container uk-height-medium">
-                        <img src="http://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+            <div class="uk-container uk-container-small" style="padding:30px 0;">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <a href="http://high-society.co.uk/"><div class="uk-card-media-left uk-cover-container">
+                        <img src="assets/images/sponsors/highsociety.jpg" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div></a>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">High Society</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="uk-cover-container uk-height-medium">
-                        <img src="http://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Ernest Young</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                    <a href="http://www.ey.com/uk/en/careers/"><div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="assets/images/sponsors/ey.jpg" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div class="_3em-padding"></div>
+    </div>
+
+    <div id="other" class="backdrop" style="background-color: rgba(23, 82, 4, 0.85);height: 30em;"></div>
+
+    <div id="charities" class="below-fold">
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+            <div class="uk-container uk-container-expand">
+                <h1 id="charities-title" class="uk-heading-line uk-text-center"><span>CHARITIES</span></h1>
+            </div>
+            <div class="uk-container uk-container-small" style="padding:30px 0;">
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <a href="http://high-society.co.uk/"><div class="uk-card-media-left uk-cover-container">
+                        <img src="assets/images/charities/cats.jpg" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div></a>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">CATS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
                     </div>
                 </div>
-                <div>
-                    <div class="uk-cover-container uk-height-medium">
-                        <img src="http://getuikit.com/docs/images/dark.jpg" alt="" uk-cover>
+
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                    <div>
+                        <div class="uk-card-body">
+                            <h3 class="uk-card-title">Student Community Action</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                        </div>
+                    </div>
+                    <a href="http://www.ey.com/uk/en/careers/"><div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                        <img src="assets/images/charities/sca.jpg" alt="" uk-cover>
+                        <canvas width="600" height="400"></canvas>
+                    </div></a>
+                </div>
+            </div>
+        </div>
+        <div class="_3em-padding"></div>
+    </div>
+
+    <div id="other" class="backdrop" style="background-color: rgba(82, 4, 72, 0.85);height: 30em;"></div>
+
+    <div id="committee" class="below-fold">
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+            <div class="uk-container uk-container-expand">
+                <h1 id="committee-title" class="uk-heading-line uk-text-center"><span>COMMITTEE</span></h1>
+            </div>
+            <div class="uk-container uk-container-medium" style="padding:30px 0;">
+                <div class="uk-child-width-1-4@l uk-child-width-1-2@m uk-child-width-1-1@s" uk-grid>
+                    <div class="uk-hidden@xs uk-visible@l"></div>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="assets/images/committee/profile-placeholder.jpg" alt="" uk-cover>
+                            <canvas width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="assets/images/committee/profile-placeholder.jpg" alt="" uk-cover>
+                            <canvas width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@l"></div>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="assets/images/committee/profile-placeholder.jpg" alt="" uk-cover>
+                            <canvas width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="assets/images/committee/profile-placeholder.jpg" alt="" uk-cover>
+                            <canvas width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="assets/images/committee/profile-placeholder.jpg" alt="" uk-cover>
+                            <canvas width="400" height="400"></canvas>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="uk-cover-container">
+                            <img src="assets/images/committee/profile-placeholder.jpg" alt="" uk-cover>
+                            <canvas width="400" height="400"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="background-color: rgba(23, 82, 4, 0.85);height: 30em;">
-    </div>
+    <div id="other" class="backdrop" style="background-color: rgba(4, 82, 119, 0.85);height: 30em;"></div>
 
     <div class="below-fold">
         <div id="footer">
