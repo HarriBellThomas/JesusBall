@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('https://github.com/marionettejs/www/blob/master/source/stylesheets/fonts/avenir/avenirltstd-book-webfont.woff?raw=true') format('woff'),
+       url('https://github.com/marionettejs/www/blob/master/source/stylesheets/fonts/avenir/avenirltstd-book-webfont.ttf?raw=true') format('truetype');
+}
+
 .gpu {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -8,7 +14,7 @@
 
 html {
     background-color: #2b1a4d !important;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     overflow-x: hidden;
     max-width: 100%;
@@ -31,7 +37,7 @@ img {
 }
 
 html body .uk-container .uk-card-title {
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
 }
 
 .dynamic-aurora-container {
@@ -95,7 +101,26 @@ html body .uk-container .uk-card-title {
     right: 0;
     position: absolute;
     opacity: 0.9;
+    z-index: -2;
+}
+
+.backdrop::before {
+    content: "";
+    background-image: url("../../assets/images/saturation-layer.jpg");
+    background-position: center;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    opacity: 0.4;
     z-index: -1;
+}
+
+.backdrop-flipped::before,
+.backdrop-flipped::after {
+    transform: scaleY(-1);
 }
 
 .backdrop .background {
@@ -108,11 +133,12 @@ html body .uk-container .uk-card-title {
 }
 
 #header #horse {
-    max-width: 200px;
+    max-width: 300px;
     z-index: 2001;
     position: relative;
     top: 50%;
     left: 50%;
+    opacity: 0.9;
     /* bring your own prefixes */
     transform: translate(-50%, -50%);
 }
@@ -155,8 +181,8 @@ html body .uk-container .uk-card-title {
     z-index: 2000;
     display: block;
     width: 100%;
-    background-color: rgba(21, 21, 21, 0.90);
-    background: linear-gradient(-45deg, rgba(35, 15, 45, 0.88), #0e0e0e);
+    background-color: rgba(4, 16, 42, 0.88);
+    background: linear-gradient(-45deg, rgba(4, 16, 42, 0.88), #0e0e0e);
 }
 
 #scroll-down {
@@ -235,15 +261,17 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 100;
     font-size: 3em;
-    color: #edc8ff;
+    color: #fff;
+    /* color: #edc8ff; */
 }
 
 #aurora-title.uk-heading-line>::after,
 #aurora-title.uk-heading-line>::before {
-    border-bottom: 1px solid #c094d6;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);;
+    /* border-bottom: 1px solid #c094d6; */
 }
 
 #entertainment-title {
@@ -251,15 +279,17 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     font-size: 2em;
-    color: #e84d4b;
+    color: #fff;
+    /* color: #e84d4b; */
 }
 
 #entertainment-title.uk-heading-line>::after,
 #entertainment-title.uk-heading-line>::before {
-    border-bottom: 1px solid #ab3735;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);;
+    /* border-bottom: 1px solid #ab3735; */
 }
 
 .ent-name {
@@ -271,15 +301,17 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     font-size: 2em;
-    color: #d8a13b;
+    color: #fff;
+    /* color: #d8a13b; */
 }
 
 #tickets-title.uk-heading-line>::after,
 #tickets-title.uk-heading-line>::before {
-    border-bottom: 1px solid #946c23;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-bottom: 1px solid #946c23; */
 }
 
 #sponsors-title {
@@ -287,15 +319,17 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     font-size: 2em;
-    color: #349a15;
+    color: #fff;
+    /* color: #349a15; */
 }
 
 #sponsors-title.uk-heading-line>::after,
 #sponsors-title.uk-heading-line>::before {
-    border-bottom: 1px solid #236d0d;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-bottom: 1px solid #236d0d; */
 }
 
 #charities-title {
@@ -303,15 +337,17 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     font-size: 2em;
-    color: #ea69f7;
+    color: #fff;
+    /* color: #ea69f7; */
 }
 
 #charities-title.uk-heading-line>::after,
 #charities-title.uk-heading-line>::before {
-    border-bottom: 1px solid #a330af;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-bottom: 1px solid #a330af; */
 }
 
 #committee-title {
@@ -319,15 +355,17 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Lato", sans-serif !important;
+    font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     font-size: 2em;
-    color: #00b4ff;
+    color: #fff;
+    /* color: #00b4ff; */
 }
 
 #committee-title.uk-heading-line>::after,
 #committee-title.uk-heading-line>::before {
-    border-bottom: 1px solid #0376a7;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /* border-bottom: 1px solid #0376a7; */
 }
 
 .ticket-card-header {
@@ -342,8 +380,10 @@ html body .uk-container .uk-card-title {
 
 #intro-text {
     font-weight: 400;
-    color: #9d75b1;
+    color: #fff;
+    /* color: #9d75b1; */
     padding-bottom: 40px !important;
+    text-align: justify;
 }
 
 #heading-paragraph {
@@ -390,6 +430,25 @@ html body .uk-container .uk-card-title {
     margin-bottom: 0px;
     font-weight: 400;
     font-size: 0.8em;
+}
+
+.committee-gif {
+    -webkit-box-shadow: 0px 0px 47px 6px rgba(66, 66, 66, 0.15);
+    -moz-box-shadow: 0px 0px 47px 6px rgba(66, 66, 66, 0.15);
+    box-shadow: 0px 0px 47px 6px rgba(66, 66, 66, 0.15);
+    border-radius:5px;
+}
+
+.committee-member {
+    background-color: rgba(0,0,0,0);
+    color: #cccccc;
+    overflow:hidden;
+}
+
+.committee-name {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 900;
 }
 
 ._3em-padding {

@@ -11,7 +11,7 @@
     }
 
     #header #horse {
-        max-width: 400px;
+        max-width: 480px;
     }
 
     #saturation-layer {
@@ -64,7 +64,7 @@
     #entertainment-title,
     #tickets-title,
     #sponsors-title,
-    #committee-title, 
+    #committee-title,
     #charities-title {
         font-size: 4em;
     }
@@ -97,7 +97,7 @@
     }
 
     #header #horse {
-        max-width: 300px;
+        max-width: 400px;
     }
 
     #scroll-down a {
