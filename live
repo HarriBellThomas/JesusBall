@@ -1,0 +1,1 @@
+scp -r /Users/harri/Dev/HTML/Jesus\ Ball/* root@jesusmayball.com:site/twentyeighteen/ &
