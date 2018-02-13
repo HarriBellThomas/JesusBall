@@ -48,6 +48,12 @@
 
     <!-- Introduction -->
     <div id="aurora" class="below-fold">
+        <div id="soundscape-control" uk-parallax="opacity: 0.7,1; y: 40,0; viewport: 0.35">
+            <div id="music-play">
+                <p id="play"><span class="play-icon" uk-icon="icon: play-circle; ratio: 1"></span><span class="play-text" style="padding-left:10px;vertical-align: middle;">Play the Soundscape</span></p>
+                <!-- <p id="pause" style="display:none;"><span uk-icon="icon: ban; ratio: 1"></span><span style="padding-left:10px;vertical-align: middle;">Pause the Soundscape</span></p> -->
+            </div>
+        </div>
         <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
             <div class="uk-container uk-container-expand">
                 <h1 id="aurora-title" class="uk-heading-line uk-text-center"><span>A U R O R A</span></h1>
@@ -71,11 +77,11 @@
                 <h1 id="entertainment-title" class="uk-heading-line uk-text-center"><span>ENTERTAINMENT</span></h1>
             </div>
 
-            <div class="uk-container uk-container-small" style="padding:30px 0;">
+            <!-- <div class="uk-container uk-container-small" style="padding:30px 0;">
                 <div class="uk-child-width-1-2@l uk-child-width-1-1@m uk-text-center" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default ent-card">
-                            <div class="uk-card-header" style="padding:0;background-color:#521212;">
+                            <div class="uk-card-header" style="padding:0;">
                                 <img src="assets/images/lauramvula.png" />
                             </div>
                             <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
@@ -88,7 +94,7 @@
                     </div>
                     <div>
                         <div class="uk-card uk-card-default ent-card">
-                            <div class="uk-card-header" style="padding:0;background-color:#521212;">
+                            <div class="uk-card-header" style="padding:0;">
                                 <img src="assets/images/bjukeboys.jpg" />
                             </div>
                             <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
@@ -100,6 +106,10 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="uk-container uk-container-expand">
+                <h3 id="entertainment-title" class="uk-text-center" style="color: rgba(255, 255, 255, 0.4);"><span>To Be Announced</span></h1>
             </div>
         </div>
         <div class="_3em-padding"></div>
@@ -114,32 +124,37 @@
                 <h1 id="tickets-title" class="uk-heading-line uk-text-center"><span>TICKETS</span></h1>
             </div>
 
+            <div id="intro-text" class="uk-container uk-container-small">
+                <p>There are three types of ticket; standard, priority and dining, priced at £150, £170, and £190 respectively.</p>
+                <p>Standard tickets allow you to enjoy the ball from 8pm, while priority tickets give you the chance to skip the queue and enjoy a champagne reception, and entrance to the ball before everyone else. If you are looking for a VIP experience, our luxury dining package includes a champagne reception and a grand three-course meal in hall.</p>
+            </div>
+
             <div class="uk-container uk-container-small" style="padding:30px 0;">
                 <div class="uk-child-width-1-3@l uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default uk-card-body ticket-card">
                             <h3 class="uk-card-title ticket-card-header uk-text-center">Standard</h3>
                             <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£150</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Standard tickets entitle holders to enter the ball at 20:00.</p>
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-primary uk-card-body ticket-card">
                             <h3 class="uk-card-title ticket-card-header uk-text-center">Priority</h3>
                             <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£170</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Priority tickets entitle holders to enter the Ball for a Champagne reception at 19:15.</p>
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-secondary uk-card-body ticket-card">
                             <h3 class="uk-card-title ticket-card-header uk-text-center">Dining</h3>
                             <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£190</span></h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                            <p>Dining tickets entitle holders to enter the Ball at 18:30 for a Champagne reception before a three-course meal beginning at 19:00.</p>
                         </div>
                     </div>
                 </div>
                 <div style="width:100%">
-                    <button class="uk-button uk-button-danger uk-button-large buy-tickets-button" style="margin:0 auto;display: block;margin-top: 30px;">Buy Tickets</button>
+                    <a style="text-decoration:none;" href="https://jesusmayball.com/tickets/"><button class="uk-button uk-button-danger uk-button-large buy-tickets-button" style="margin:0 auto;display: block;margin-top: 30px;">Buy Tickets</button></a>
                 </div>
             </div>
         </div>
@@ -156,27 +171,40 @@
             </div>
 
             <div class="uk-container uk-container-small" style="padding:30px 0;">
+
+                <div class="hidpi-header" style="margin-bottom:-25px;display:none;">
+                    <img src="assets/images/sponsors/highsociety.jpg" alt="">
+                </div>
                 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <a href="http://high-society.co.uk/"><div class="uk-card-media-left uk-cover-container">
+                    <a href="http://high-society.co.uk/" style="background-color: #231f20;"><div class="uk-card-media-left uk-cover-container hidpi-shrink">
                         <img src="assets/images/sponsors/highsociety.jpg" alt="" uk-cover>
                         <canvas width="600" height="400"></canvas>
                     </div></a>
-                    <div>
+                    <div class="hidpi-expand">
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">High Society</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>High Society offers fun and flexible work for students! High Society is a staffing agency that provides part-time bar and waiting staff for fantastic events in London.</p>
+                            <p>We offer free intensive training here in Clapham. We will then offer you shifts working in some incredible venues, in various roles.  We have some really fantastic events coming up and we would love you to join us, so come and have some fun and meet some lovely people in the process! We will spoil you for choice and flexibility.</p>
+                            <p>To apply please go to <a href="http://high-society.co.uk/">http://high-society.co.uk</a></p>
                         </div>
                     </div>
                 </div>
 
+
+                <div class="hidpi-header" style="margin-bottom:-25px;display:none;">
+                    <img src="assets/images/sponsors/ey.jpg" alt="">
+                </div>
                 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div>
+                    <div class="hidpi-expand">
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">Ernest Young</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                     </div>
-                    <a href="http://www.ey.com/uk/en/careers/"><div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <a href="http://www.ey.com/uk/en/careers/"><div class="uk-flex-last@s uk-card-media-right uk-cover-container hidpi-shrink">
                         <img src="assets/images/sponsors/ey.jpg" alt="" uk-cover>
                         <canvas width="600" height="400"></canvas>
                     </div></a>
@@ -195,27 +223,43 @@
                 <h1 id="charities-title" class="uk-heading-line uk-text-center"><span>CHARITIES</span></h1>
             </div>
             <div class="uk-container uk-container-small" style="padding:30px 0;">
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <a href="http://high-society.co.uk/"><div class="uk-card-media-left uk-cover-container">
+
+                <div class="hidpi-header" style="margin-bottom:-25px;display:none;">
+                    <img src="assets/images/charities/cats.jpg" alt="">
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@xs uk-margin" uk-grid>
+                    <a href="http://high-society.co.uk/"><div class="uk-card-media-left uk-cover-container hidpi-shrink">
+                        <span class="helper"></span>
                         <img src="assets/images/charities/cats.jpg" alt="" uk-cover>
                         <canvas width="600" height="400"></canvas>
                     </div></a>
-                    <div>
+                    <div class="hidpi-expand">
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">CATS</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <div>
+
+                <div class="hidpi-header" style="margin-bottom:-25px;display:none;">
+                    <img src="assets/images/charities/sca.jpg" alt="">
+                </div>
+                <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@m uk-child-width-1-1@xs uk-margin" uk-grid>
+                    <div class="hidpi-expand">
                         <div class="uk-card-body">
                             <h3 class="uk-card-title">Student Community Action</h3>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
                         </div>
                     </div>
-                    <a href="http://www.ey.com/uk/en/careers/"><div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <a href="http://www.ey.com/uk/en/careers/"><div class="uk-flex-last@s uk-card-media-right uk-cover-container hidpi-shrink">
+                        <span class="helper"></span>
                         <img src="assets/images/charities/sca.jpg" alt="" uk-cover>
                         <canvas width="600" height="400"></canvas>
                     </div></a>
@@ -229,50 +273,201 @@
     <!-- <div id="other" class="backdrop" style="background-color: rgba(82, 4, 72, 0.85);height: 30em;"></div> -->
 
     <div id="committee" class="below-fold">
-        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.05">
             <div class="uk-container uk-container-expand">
                 <h1 id="committee-title" class="uk-heading-line uk-text-center"><span>COMMITTEE</span></h1>
             </div>
-            <div class="uk-container uk-container-medium" style="padding:30px 0;">
-                <div class="uk-child-width-1-4@l uk-child-width-1-2@s uk-child-width-1-1@xs" uk-grid>
+            <div class="uk-container uk-container-medium committee-presidents" style="margin:30px auto;">
+                <div class="uk-child-width-1-4@l uk-child-width-1-1@xs" uk-grid>
                     <div class="uk-hidden@xs uk-visible@l"></div>
                     <div>
                         <div class="committee-member">
-                            <img class="committee-gif" src="assets/images/committee/harri-static.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri-static.jpg" alt="">
-                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <img class="committee-gif" src="assets/images/committee/will.jpg" data-gif="assets/images/committee/will.gif" data-static="assets/images/committee/will.jpg" alt="">
+                            <p class="committee-name">Will Thurlwell</p>
+                            <p class="committee-role">President</p>
                         </div>
                     </div>
                     <div>
                         <div class="committee-member">
-                            <img class="committee-gif" src="assets/images/committee/harri-static.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri-static.jpg" alt="">
-                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <img class="committee-gif" src="assets/images/committee/james.jpg" data-gif="assets/images/committee/james.gif" data-static="assets/images/committee/james.jpg" alt="">
+                            <p class="committee-name">James Kendall</p>
+                            <p class="committee-role">President</p>
                         </div>
                     </div>
                     <div class="uk-hidden@xs uk-visible@l"></div>
+                </div>
+            </div>
+            <div class="uk-container uk-container-expand committee-rest">
+                <div class="uk-child-width-1-5@l uk-child-width-1-1@xs" uk-grid>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
                     <div>
                         <div class="committee-member">
-                            <img class="committee-gif" src="assets/images/committee/harri-static.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri-static.jpg" alt="">
-                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <img class="committee-gif" src="assets/images/committee/matt.jpg" data-gif="assets/images/committee/matt.gif" data-static="assets/images/committee/matt.jpg" alt="">
+                            <p class="committee-name">Matthew Seccombe</p>
+                            <p class="committee-role">Head of Design</p>
                         </div>
                     </div>
                     <div>
                         <div class="committee-member">
-                            <img class="committee-gif" src="assets/images/committee/harri-static.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri-static.jpg" alt="">
-                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <img class="committee-gif" src="assets/images/committee/lizzy.jpg" data-gif="assets/images/committee/lizzy.gif" data-static="assets/images/committee/lizzy.jpg" alt="">
+                            <p class="committee-name">Elizabeth Robson</p>
+                            <p class="committee-role">Deputy Head of Design</p>
                         </div>
                     </div>
                     <div>
                         <div class="committee-member">
-                            <img class="committee-gif" src="assets/images/committee/harri-static.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri-static.jpg" alt="">
-                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <img class="committee-gif" src="assets/images/committee/eden.jpg" data-gif="assets/images/committee/eden.gif" data-static="assets/images/committee/eden.jpg" alt="">
+                            <p class="committee-name">Eden Day</p>
+                            <p class="committee-role">Design</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/manu.jpg" data-gif="assets/images/committee/manu.gif" data-static="assets/images/committee/manu.jpg" alt="">
+                            <p class="committee-name">Manahara Ratnayake</p>
+                            <p class="committee-role">Design</p>
                         </div>
                     </div>
                     <div>
                         <div class="committee-member">
-                            <img class="committee-gif" src="assets/images/committee/harri-static.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri-static.jpg" alt="">
-                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <img class="committee-gif" src="assets/images/committee/holly.jpg" data-gif="assets/images/committee/holly.gif" data-static="assets/images/committee/holly.jpg" alt="">
+                            <p class="committee-name">Holly Scott</p>
+                            <p class="committee-role">Design</p>
                         </div>
                     </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/shona.jpg" data-gif="assets/images/committee/shona.gif" data-static="assets/images/committee/shona.jpg" alt="">
+                            <p class="committee-name">Shona Webb</p>
+                            <p class="committee-role">Design</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/ali.jpg" data-gif="assets/images/committee/ali.gif" data-static="assets/images/committee/ali.jpg" alt="">
+                            <p class="committee-name">Ali Alam</p>
+                            <p class="committee-role">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/luke.jpg" data-gif="assets/images/committee/luke.gif" data-static="assets/images/committee/luke.jpg" alt="">
+                            <p class="committee-name">Luke Kirby</p>
+                            <p class="committee-role">Drinks</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/oli.jpg" data-gif="assets/images/committee/oli.gif" data-static="assets/images/committee/oli.jpg" alt="">
+                            <p class="committee-name">Oli Stubbs</p>
+                            <p class="committee-role">Food</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/george.jpg" data-gif="assets/images/committee/george.gif" data-static="assets/images/committee/george.jpg" alt="">
+                            <p class="committee-name">George Raikes</p>
+                            <p class="committee-role">Main Ents</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/catherine.jpg" data-gif="assets/images/committee/catherine.gif" data-static="assets/images/committee/catherine.jpg" alt="">
+                            <p class="committee-name">Catherine Tran</p>
+                            <p class="committee-role">Student Ents and Green</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/wilf.jpg" data-gif="assets/images/committee/wilf.gif" data-static="assets/images/committee/wilf.jpg" alt="">
+                            <p class="committee-name">Wilfred Vernon</p>
+                            <p class="committee-role">Non Music Ents</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/iain.jpg" data-gif="assets/images/committee/iain.gif" data-static="assets/images/committee/iain.jpg" alt="">
+                            <p class="committee-name">Iain Rolland</p>
+                            <p class="committee-role">Infrastructure</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/omar.jpg" data-gif="assets/images/committee/omar.gif" data-static="assets/images/committee/omar.jpg" alt="">
+                            <p class="committee-name">Omar Helmy</p>
+                            <p class="committee-role">Technical Logistics</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/jack.jpg" data-gif="assets/images/committee/jack.gif" data-static="assets/images/committee/jack.jpg" alt="">
+                            <p class="committee-name">Jack Bradbury</p>
+                            <p class="committee-role">Security</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/ed.jpg" data-gif="assets/images/committee/ed.gif" data-static="assets/images/committee/ed.jpg" alt="">
+                            <p class="committee-name">Ed Parker Humphreys</p>
+                            <p class="committee-role">Secretary</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/eloise.jpg" data-gif="assets/images/committee/eloise.gif" data-static="assets/images/committee/eloise.jpg" alt="">
+                            <p class="committee-name">Eloise England</p>
+                            <p class="committee-role">Staffing and Green</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/jacquie.jpg" data-gif="assets/images/committee/jacquie.gif" data-static="assets/images/committee/jacquie.jpg" alt="">
+                            <p class="committee-name">Jacquie Rowe</p>
+                            <p class="committee-role">Staffing</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/kate.jpg" data-gif="assets/images/committee/kate.gif" data-static="assets/images/committee/kate.jpg" alt="">
+                            <p class="committee-name">Kate Fitzpatrick</p>
+                            <p class="committee-role">Ticketing</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/taren.jpg" data-gif="assets/images/committee/taren.gif" data-static="assets/images/committee/taren.jpg" alt="">
+                            <p class="committee-name">Taren Rughooputh</p>
+                            <p class="committee-role">Treasurer</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="committee-member">
+                            <img class="committee-gif" src="assets/images/committee/harri.jpg" data-gif="assets/images/committee/harri.gif" data-static="assets/images/committee/harri.jpg" alt="">
+                            <p class="committee-name">Harri Bell-Thomas</p>
+                            <p class="committee-role">Webmaster</p>
+                        </div>
+                    </div>
+                    <div class="uk-hidden@xs uk-visible@m"></div>
+
                 </div>
             </div>
         </div>
@@ -293,7 +488,7 @@
         <div class="uk-modal-dialog">
             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
             <div class="uk-grid-collapse uk-child-width-1-2@l uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-background-cover uk-hidden@s" style="background-image: url('assets/images/lauramvula.png');" uk-height-viewport></div>
+                <div class="uk-background-cover uk-hidden@xs hidpi-shrink" style="background-image: url('assets/images/lauramvula.png');" uk-height-viewport></div>
                 <div class="uk-padding-large" uk-height-viewport>
                     <h1>Headline</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -301,6 +496,13 @@
             </div>
         </div>
     </div>
+
+<audio loop id="background-music">
+    <source src="assets/music/ethereal.m4a" type="audio/mpeg" />
+    <source src="assets/music/ethereal.ogg" type="audio/ogg" />
+    <source src="assets/music/ethereal.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
 
 <script src="assets/js/particles.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
@@ -315,12 +517,13 @@
 // gif.src = "https://media.giphy.com/media/l0DAIi9ltgGem18fC/giphy.gif";
 // gif.src = "https://media.giphy.com/media/xUNd9H3vsqXNyGl61O/giphy.gif";
 // var bg_img_src = "assets/images/static-bg-aurora.jpg";
-var bg_img_src = "https://media.giphy.com/media/26DMZudg7MXiXyUco/giphy.gif";
+// var bg_img_src = "https://media.giphy.com/media/26DMZudg7MXiXyUco/giphy.gif";
+var bg_img_src = "assets/images/bg.gif";
 
 function has_loaded() {
     if($("#loading-screen").length) {
         $("#loading-screen").fadeOut(1000, function() {
-            $("#loading-screen").remove();
+            // $("#loading-screen").remove();
             var gif = new Image();
             gif.src = bg_img_src;
             $(gif).imagesLoaded( function() {
@@ -349,6 +552,20 @@ $(document).ready(function(){
 
     $('html').smoothScroll(300);
 
+    $('#music-play').click(function() {
+        var audio = $('#background-music');
+        if (audio.prop("paused") == false) {
+            audio.trigger("pause");
+            $(".play-icon", this).attr("uk-icon", "icon: play-circle; ratio: 1");
+            $(".play-text", this).text("Play the Soundscape");
+        }
+        else {
+            audio.trigger("play");
+            $(".play-icon", this).attr("uk-icon", "icon: ban; ratio: 1");
+            $(".play-text", this).text("Pause the Soundscape");
+        }
+    });
+
     if(!window.mobilecheck()) {
         /* Desktop */
         particlesJS.load('particles-js', 'assets/js/particles.json', function() {});
@@ -362,6 +579,8 @@ $(document).ready(function(){
                 $(this).attr("src", $(this).attr("data-static"));
             });
         });
+
+        easterEggs();
     }
     else {
         /* Mobile */
@@ -384,6 +603,26 @@ function preloadImage(url) {
     images.push(img);
 }
 
+function easterEggs() {
+    console.log("---------------------------");
+    // console.log("(┛ಠ_ಠ)┛彡┻━┻");
+    // console.log("Me, if you f*ck with my website");
+    console.log("(ಠ ಠ)");
+    console.log("Don't try anything funny...");
+    console.log("---------------------------");
+    console.log("");
+    console.log("Congratulations! You found one of the free tickets hidden throughout the site.");
+    console.log("To redeem, simply type 'redeemFreeTicket()'");
+    console.log("");
+}
+
+function redeemFreeTicket() {
+    window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+    console.log("👏👏👏");
+    console.log("Nice try.");
+    console.log("");
+    return false;
+}
 </script>
 </body>
 </html>

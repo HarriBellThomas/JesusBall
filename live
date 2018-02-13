@@ -1,1 +1,2 @@
-scp -r /Users/harri/Dev/HTML/Jesus\ Ball/* root@jesusmayball.com:site/twentyeighteen/ &
+#scp -r /Users/harri/Dev/HTML/Jesus\ Ball/* root@jesusmayball.com:site/twentyeighteen/ &
+rsync -avzhre ssh --no-perms --no-owner --no-group --delete  /Users/harri/Dev/HTML/Jesus\ Ball/ root@jesusmayball.com:site/twentyeighteen/

@@ -86,6 +86,109 @@
         font-size: 2em !important;
         padding: 0.4em !important;
     }
+
+    button.uk-close-large svg {
+        width:50px;
+        height:50px;
+        padding:30px;
+    }
+
+    .uk-modal-dialog h1 {
+        font-size: 5.125rem;
+    }
+
+    .uk-modal-dialog p {
+        font-size: 1.7em;
+    }
+
+    .uk-modal-dialog .uk-padding-large {
+        padding: 80px;
+    }
+
+    .uk-modal-dialog .uk-background-cover {
+        display: none;
+    }
+
+    .uk-grid .uk-card .uk-card-footer {
+        padding: 40px 60px;
+    }
+
+    .uk-card h3.uk-card-title {
+        font-size: 2.5em;
+        padding: 20px;
+    }
+
+    .uk-button.buy-tickets-button {
+        margin-top: 50px;
+        width: 100%;
+        padding: 40px 20px !important;
+        font-weight: 700 !important;
+        font-size: 2.5rem !important;
+    }
+
+    #sponsors .uk-first-column,
+    #charities .uk-first-column {
+        width: 40%;
+    }
+
+    #sponsors h3.uk-card-title,
+    #charities h3.uk-card-title {
+        padding-left: 0px;
+        font-size: 3.5em;
+    }
+
+    #sponsors .uk-card-body,
+    #charities .uk-card-body {
+        padding: 60px 60px;
+    }
+
+    #sponsors .uk-card-body p,
+    #charities .uk-card-body p {
+        font-size: 2em;
+    }
+
+    #sponsors .hidpi-shrink,
+    #charities .hidpi-shrink {
+        display: none
+    }
+
+    #sponsors .hidpi-expand,
+    #charities .hidpi-expand {
+        width: 100%;
+    }
+
+    .hidpi-header {
+        display: block !important;
+    }
+
+    .committee-name {
+        font-size: 4.2em;
+        padding: 40px;
+    }
+
+    .committee-presidents,
+    .committee-rest {
+        padding: 0 140px;
+    }
+
+    .committee-role {
+        font-size: 3.5em;
+        margin-top: -70px;
+    }
+
+    #music-play #play {
+        font-size: 2.5em;
+        padding: 60px 0 20px 0;
+    }
+
+    #music-play .play-text {
+        padding-left: 20px;
+    }
+
+    #music-play svg {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 

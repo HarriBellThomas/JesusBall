@@ -4,6 +4,7 @@
        url('../fonts/avenirltstd-book-webfont.ttf') format('truetype');
 }
 
+/* Aux */
 .gpu {
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
@@ -11,6 +12,13 @@
     -o-transform: translateZ(0);
     transform: translateZ(0);
 }
+
+.helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+/* End Aux */
 
 html {
     background-color: #2b1a4d !important;
@@ -26,6 +34,10 @@ body {
     max-width: 100%;
     height: 100%;
     position: absolute;
+}
+
+.uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
+    font-family: "Avenir-Book", sans-serif !important;
 }
 
 text {
@@ -100,7 +112,7 @@ html body .uk-container .uk-card-title {
     bottom: 0;
     right: 0;
     position: absolute;
-    opacity: 0.9;
+    opacity: 0.8;
     z-index: -2;
 }
 
@@ -256,8 +268,15 @@ html body .uk-container .uk-card-title {
   }
 }
 
+#soundscape-control p {
+    text-align: center;
+    color: white;
+    padding: 20px 0 0 0;
+    cursor: pointer;
+}
+
 #aurora-title {
-    padding: 70px 0px 30px 0px;
+    padding: 40px 0px 30px 0px;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -290,6 +309,16 @@ html body .uk-container .uk-card-title {
 #entertainment-title.uk-heading-line>::before {
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);;
     /* border-bottom: 1px solid #ab3735; */
+}
+
+.ent-card .uk-card-body,
+.ent-card .uk-card-footer {
+    background: white;
+}
+
+.ent-card .uk-card-header,
+.ent-card.uk-card-default {
+    background: none;
 }
 
 .ent-name {
@@ -450,6 +479,14 @@ html body .uk-container .uk-card-title {
     text-align: center;
     font-size: 1.2em;
     font-weight: 900;
+    color: #f1f1f1;
+}
+
+.committee-role {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: -20px;
 }
 
 ._3em-padding {
