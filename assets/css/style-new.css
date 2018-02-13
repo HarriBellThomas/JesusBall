@@ -495,7 +495,11 @@ html body .uk-container .uk-card-title {
     display: block;
 }
 
-
+.vertical-centre {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 .auroral-northern {
     /* animation-name: b; */
