@@ -100,9 +100,8 @@ html body .uk-container .uk-card-title {
     z-index: 2000;
     width: 100%;
     margin-top: -1px;
-    height: 26em;
+    height: 22em;
     overflow:hidden;
-    margin-bottom: -4em;
 }
 
 .backdrop::after {
@@ -152,6 +151,7 @@ html body .uk-container .uk-card-title {
     height:100%;
     background-position:center;
     background-size: cover;
+    height: 26em;
 }
 
 #header #horse {
