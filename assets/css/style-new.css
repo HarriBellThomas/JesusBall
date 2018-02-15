@@ -429,9 +429,9 @@ html body .uk-container .uk-card-title {
 #intro-text {
     font-weight: 400;
     color: #fff;
-    /* color: #9d75b1; */
     padding-bottom: 40px !important;
     text-align: justify;
+    font-size: 1.2em;
 }
 
 #heading-paragraph {
