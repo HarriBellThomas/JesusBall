@@ -21,7 +21,7 @@
 /* End Aux */
 
 html {
-    background-color: #2b1a4d !important;
+    background-color: #0f1114 !important;
     font-family: "Avenir-Book", sans-serif !important;
     font-weight: 400;
     overflow-x: hidden;
@@ -100,6 +100,9 @@ html body .uk-container .uk-card-title {
     z-index: 2000;
     width: 100%;
     margin-top: -1px;
+    height: 26em;
+    overflow:hidden;
+    margin-bottom: -4em;
 }
 
 .backdrop::after {
@@ -142,6 +145,13 @@ html body .uk-container .uk-card-title {
 .mix-blend-mode .backdrop {
     mix-blend-mode: color;
     opacity: 1;
+}
+
+.backdrop-header {
+    width:100%;
+    height:100%;
+    background-position:center;
+    background-size: cover;
 }
 
 #header #horse {
@@ -343,6 +353,15 @@ html body .uk-container .uk-card-title {
     /* border-bottom: 1px solid #946c23; */
 }
 
+.uk-card-default .uk-card-title.ticket-card-header,
+.uk-heading-line.ticket-card-price span {
+    color: #fff;
+}
+
+.uk-card.ticket-card p {
+    color: rgba(255, 255, 255, 0.6);
+}
+
 #sponsors-title {
     padding: 70px 0px 30px 0px;
     text-align: center;
@@ -465,7 +484,7 @@ html body .uk-container .uk-card-title {
     -webkit-box-shadow: 0px 0px 47px 6px rgba(66, 66, 66, 0.15);
     -moz-box-shadow: 0px 0px 47px 6px rgba(66, 66, 66, 0.15);
     box-shadow: 0px 0px 47px 6px rgba(66, 66, 66, 0.15);
-    border-radius:5px;
+    border-radius:10px;
     width: 100%;
 }
 

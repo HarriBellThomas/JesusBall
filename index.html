@@ -37,10 +37,10 @@
 
     <!-- <div style="position: fixed;z-index: 1999;width: 100%;height: 100%;background: linear-gradient(40deg, #a1d9b4 20%, #3b8ba9 40%, #1d003c 70%);opacity: 0.5;mix-blend-mode: color;mix-blend-mode: overlay;"></div> -->
 
-    <div id="header" class="uniquemainheader">
+    <div id="header">
         <img id="saturation-layer" src="assets/images/saturation-layer.jpg" />
-        <div id="horse-container"><img id="horse" src="assets/images/horse-outline.png" /></div>
-        <div id="particles-container" style="width:100%;height:100%;"><div id="particles-js" class="particles"></div></div>
+        <div data-depth="0.1" id="horse-container"><img id="horse" src="assets/images/horse-outline.png" /></div>
+        <div data-depth="0.2" id="particles-container" style="width:100%;height:100%;"><div id="particles-js" class="particles"></div></div>
     </div>
 
     <div id="scroll-down"><a href="#aurora"><span></span></a></div>
@@ -68,40 +68,42 @@
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop backdrop-flipped" style="height: 30em;"></div>
+    <div class="backdrop backdrop-flipped">
+        <div class="backdrop-header" style="background-image:url(assets/images/tickets-wide.png);" data-img-wide="assets/images/tickets-wide.png" data-img-narrow="assets/images/tickets-narrow.png"></div>
+    </div>
     <!-- <div id="other" class="backdrop" style="background-color: rgba(49, 4, 107, 0.85);height: 30em;"></div> -->
 
     <div id="entertainment" class="below-fold">
         <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
-            <div class="uk-container uk-container-expand">
+            <!-- <div class="uk-container uk-container-expand">
                 <h1 id="entertainment-title" class="uk-heading-line uk-text-center"><span>ENTERTAINMENT</span></h1>
-            </div>
+            </div> -->
 
             <!-- <div class="uk-container uk-container-small" style="padding:30px 0;">
                 <div class="uk-child-width-1-2@l uk-child-width-1-1@m uk-text-center" uk-grid>
                     <div>
                         <div class="uk-card uk-card-default ent-card">
                             <div class="uk-card-header" style="padding:0;">
-                                <img src="assets/images/lauramvula.png" />
+                                <img src="assets/images/null.png" />
                             </div>
                             <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
-                                <p class="ent-name">Laura Mvula</p>
+                                <p class="ent-name">Null</p>
                             </div>
                             <div class="uk-card-footer">
-                                <a uk-toggle="target: #lauramvula-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
+                                <a uk-toggle="target: #null-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
                             </div>
                         </div>
                     </div>
                     <div>
                         <div class="uk-card uk-card-default ent-card">
                             <div class="uk-card-header" style="padding:0;">
-                                <img src="assets/images/bjukeboys.jpg" />
+                                <img src="assets/images/null.jpg" />
                             </div>
                             <div class="uk-card-body" style="padding-top: 15px;padding-bottom: 15px;">
-                                <p class="ent-name">B & The Jukeboys</p>
+                                <p class="ent-name">Null</p>
                             </div>
                             <div class="uk-card-footer">
-                                <a uk-toggle="target: #lauramvula-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
+                                <a uk-toggle="target: #null-modal-full" href="#" class="uk-button uk-button-text">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -115,16 +117,18 @@
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="height: 30em;"></div>
+    <div class="backdrop">
+        <div class="backdrop-header" style="background-image:url(assets/images/tickets-wide.png);" data-img-wide="assets/images/tickets-wide.png" data-img-narrow="assets/images/tickets-narrow.png"></div>
+    </div>
     <!-- <div id="other" class="backdrop" style="background-color: rgba(107, 4, 4, 0.85);height: 30em;"></div> -->
 
     <div id="tickets" class="below-fold">
         <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
-            <div class="uk-container uk-container-expand">
+            <!-- <div class="uk-container uk-container-expand">
                 <h1 id="tickets-title" class="uk-heading-line uk-text-center"><span>TICKETS</span></h1>
-            </div>
+            </div> -->
 
-            <div id="intro-text" class="uk-container uk-container-small">
+            <div id="intro-text" class="uk-container uk-container-small" style="padding-top:4em;">
                 <p>There are three types of ticket; standard, priority and dining, priced at £150, £170, and £190 respectively.</p>
                 <p>Standard tickets allow you to enjoy the ball from 8pm, while priority tickets give you the chance to skip the queue and enjoy a champagne reception, and entrance to the ball before everyone else. If you are looking for a VIP experience, our luxury dining package includes a champagne reception and a grand three-course meal in hall.</p>
             </div>
@@ -132,21 +136,21 @@
             <div class="uk-container uk-container-small" style="padding:30px 0;">
                 <div class="uk-child-width-1-3@l uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
                     <div>
-                        <div class="uk-card uk-card-default uk-card-body ticket-card">
+                        <div class="uk-card uk-card-default uk-card-body ticket-card" style="background-color:rgba(43, 210, 223, 0.85);">
                             <h3 class="uk-card-title ticket-card-header uk-text-center">Standard</h3>
                             <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£150</span></h1>
                             <p>Standard tickets entitle holders to enter the ball at 20:00.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-primary uk-card-body ticket-card">
+                        <div class="uk-card uk-card-primary uk-card-body ticket-card" style="background-color:rgba(17, 134, 146, 0.85);">
                             <h3 class="uk-card-title ticket-card-header uk-text-center">Priority</h3>
                             <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£170</span></h1>
                             <p>Priority tickets entitle holders to enter the Ball for a Champagne reception at 19:15.</p>
                         </div>
                     </div>
                     <div>
-                        <div class="uk-card uk-card-secondary uk-card-body ticket-card">
+                        <div class="uk-card uk-card-secondary uk-card-body ticket-card" style="background-color:rgba(57, 10, 182, 0.85);">
                             <h3 class="uk-card-title ticket-card-header uk-text-center">Dining</h3>
                             <h1 class="uk-heading-line ticket-card-price uk-text-center"><span>£190</span></h1>
                             <p>Dining tickets entitle holders to enter the Ball at 18:30 for a Champagne reception before a three-course meal beginning at 19:00.</p>
@@ -154,21 +158,23 @@
                     </div>
                 </div>
                 <div style="width:100%">
-                    <a style="text-decoration:none;" href="https://jesusmayball.com/tickets/"><button class="uk-button uk-button-danger uk-button-large buy-tickets-button" style="margin:0 auto;display: block;margin-top: 30px;">Buy Tickets</button></a>
+                    <a style="text-decoration:none;" href="https://jesusmayball.com/tickets/"><button class="uk-button uk-button-large buy-tickets-button" style="margin:0 auto;display: block;margin-top: 30px;color:black;">Buy Tickets</button></a>
                 </div>
             </div>
         </div>
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop backdrop-flipped" style="height: 30em;"></div>
+    <div class="backdrop backdrop-flipped">
+        <div class="backdrop-header" style="background-image:url(assets/images/tickets-wide.png);" data-img-wide="assets/images/tickets-wide.png" data-img-narrow="assets/images/tickets-narrow.png"></div>
+    </div>
     <!-- <div id="other" class="backdrop" style="background-color: rgba(107, 71, 4, 0.85);height: 30em;"></div> -->
 
     <div id="sponsors" class="below-fold">
-        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.35">
-            <div class="uk-container uk-container-expand">
+        <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.05">
+            <!-- <div class="uk-container uk-container-expand">
                 <h1 id="sponsors-title" class="uk-heading-line uk-text-center"><span>SPONSORS</span></h1>
-            </div>
+            </div> -->
 
             <div class="uk-container uk-container-small" style="padding:30px 0;">
 
@@ -176,7 +182,7 @@
                     <img src="assets/images/sponsors/miasposa.jpg" alt="">
                 </div>
                 <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
-                    <a href="http://high-society.co.uk/" style="background-color: #fff;"><div class="uk-card-media-left uk-cover-container hidpi-shrink vertical-centre" uk-parallax="opacity: 0.6,1; viewport: 0.35">
+                    <a href="http://high-society.co.uk/" style="background-color: #f9f9f9;"><div class="uk-card-media-left uk-cover-container hidpi-shrink vertical-centre" uk-parallax="opacity: 0.6,1; viewport: 0.35">
                         <img src="assets/images/sponsors/miasposa.jpg" alt="">
                     </div></a>
                     <div class="hidpi-expand">
@@ -213,14 +219,16 @@
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="height: 30em;"></div>
+    <div class="backdrop">
+        <div class="backdrop-header" style="background-image:url(assets/images/tickets-wide.png);" data-img-wide="assets/images/tickets-wide.png" data-img-narrow="assets/images/tickets-narrow.png"></div>
+    </div>
     <!-- <div id="other" class="backdrop" style="background-color: rgba(23, 82, 4, 0.85);height: 30em;"></div> -->
 
     <div id="charities" class="below-fold">
         <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.05">
-            <div class="uk-container uk-container-expand">
+            <!-- <div class="uk-container uk-container-expand">
                 <h1 id="charities-title" class="uk-heading-line uk-text-center"><span>CHARITIES</span></h1>
-            </div>
+            </div> -->
             <div class="uk-container uk-container-small" style="padding:30px 0;">
 
                 <!-- 1. Jimmy's Kitchen -->
@@ -349,15 +357,17 @@
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop backdrop-flipped" style="height: 30em;"></div>
+    <div class="backdrop backdrop-flipped">
+        <div class="backdrop-header" style="background-image:url(assets/images/tickets-wide.png);" data-img-wide="assets/images/tickets-wide.png" data-img-narrow="assets/images/tickets-narrow.png"></div>
+    </div>
     <!-- <div id="other" class="backdrop" style="background-color: rgba(82, 4, 72, 0.85);height: 30em;"></div> -->
 
     <div id="committee" class="below-fold">
         <div uk-parallax="opacity: 0,1; y: 100,0; viewport: 0.05">
-            <div class="uk-container uk-container-expand">
+            <!-- <div class="uk-container uk-container-expand">
                 <h1 id="committee-title" class="uk-heading-line uk-text-center"><span>COMMITTEE</span></h1>
-            </div>
-            <div class="uk-container uk-container-medium committee-presidents" style="margin:30px auto;">
+            </div> -->
+            <div class="uk-container uk-container-medium committee-presidents" style="padding-top:4em;">
                 <div class="uk-child-width-1-4@l uk-child-width-1-1@xs" uk-grid>
                     <div class="uk-hidden@xs uk-visible@l"></div>
                     <div>
@@ -554,7 +564,9 @@
         <div class="_3em-padding"></div>
     </div>
 
-    <div id="other" class="backdrop" style="height: 30em;"></div>
+    <div class="backdrop">
+        <div class="backdrop-header" style="background-image:url(assets/images/tickets-wide.png);" data-img-wide="assets/images/tickets-wide.png" data-img-narrow="assets/images/tickets-narrow.png"></div>
+    </div>
     <!-- <div id="other" class="backdrop" style="background-color: rgba(4, 82, 119, 0.85);height: 30em;"></div> -->
 
     <div class="below-fold">
@@ -564,18 +576,18 @@
     </div>
 
     <!-- Modals -->
-    <div id="lauramvula-modal-full" class="uk-modal-full" style="z-index:10000;" uk-modal>
+    <!-- <div id="null-modal-full" class="uk-modal-full" style="z-index:10000;" uk-modal>
         <div class="uk-modal-dialog">
             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
             <div class="uk-grid-collapse uk-child-width-1-2@l uk-child-width-1-1@m uk-flex-middle" uk-grid>
-                <div class="uk-background-cover uk-hidden@xs hidpi-shrink" style="background-image: url('assets/images/lauramvula.png');" uk-height-viewport></div>
+                <div class="uk-background-cover uk-hidden@xs hidpi-shrink" style="background-image: url('assets/images/null.png');" uk-height-viewport></div>
                 <div class="uk-padding-large" uk-height-viewport>
                     <h1>Headline</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 <audio loop id="background-music">
     <source src="assets/music/ethereal.m4a" type="audio/mpeg" />
@@ -660,11 +672,19 @@ $(document).ready(function(){
             });
         });
 
+        // var scene = document.getElementById('header');
+        // var parallaxInstance = new Parallax(scene);
+
         easterEggs();
     }
     else {
         /* Mobile */
         particlesJS.load('particles-js', 'assets/js/particles-mobile.json', function() {});
+
+        $(".backdrop-header").each(function() {
+            $(this).css("background-image", "url(" + $(this).attr("data-img-narrow") + ")")
+        });
+
     }
 
 });
