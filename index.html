@@ -130,7 +130,7 @@
             <div id="intro-text" class="uk-container uk-container-small" style="padding-top:4em;">
                 <p>There are three types of ticket; standard, priority and dining, priced at £150, £170, and £190 respectively.</p>
                 <p>Standard tickets allow you to enjoy the ball from 8pm, while priority tickets give you the chance to skip the queue and enjoy a champagne reception, and entrance to the ball before everyone else. If you are looking for a VIP experience, our luxury dining package includes a champagne reception and a grand three-course meal in hall.</p>
-                <a href="/tickets/details/" class="ticket-details-link"><button class="uk-button uk-button-default uk-button-medium ticket-details">Ticketing Details</button></a>
+                <a href="/tickets/details/" class="ticket-details-link" target="_blank"><button class="uk-button uk-button-default uk-button-medium ticket-details">Ticketing Details</button></a>
             </div>
             <div class="uk-container uk-container-small" style="padding:40px 0;">
                 <div class="uk-child-width-1-3@l uk-child-width-1-1@m uk-grid-small uk-grid-match" uk-grid>
@@ -611,6 +611,9 @@
 // var bg_img_src = "https://media.giphy.com/media/26DMZudg7MXiXyUco/giphy.gif";
 var bg_img_src = "assets/images/bg.gif";
 
+var images = [];
+preloadImage(bg_img_src);
+
 function has_loaded() {
     if($("#loading-screen").length) {
         $("#loading-screen").fadeOut(1000, function() {
@@ -639,8 +642,6 @@ $(document).ready(function(){
     var isEdge = !isIE && !!window.StyleMedia; // Edge 20+
     var isChrome = !!window.chrome && !!window.chrome.webstore; // Chrome 1+
 
-    preloadImage(bg_img_src);
-
     $('html').smoothScroll(300);
 
     $('#music-play').click(function() {
@@ -662,7 +663,7 @@ $(document).ready(function(){
         particlesJS.load('particles-js', 'assets/js/particles.json', function() {});
 
         $(".committee-gif").each(function() {
-            preloadImage($(this).attr("data-gif"));
+            //preloadImage($(this).attr("data-gif"));
             $(this).hover(function() {
                 $(this).attr("src", $(this).attr("data-gif"));
             },
@@ -695,7 +696,6 @@ window.mobilecheck = function() {
     return check;
 };
 
-var images = [];
 function preloadImage(url) {
     var img = new Image();
     img.src = url;
@@ -703,6 +703,8 @@ function preloadImage(url) {
 }
 
 function easterEggs() {
+    console.log("---------------------------");
+    console.log("Design by Harri Bell-Thomas");
     console.log("---------------------------");
     // console.log("(┛ಠ_ಠ)┛彡┻━┻");
     // console.log("Me, if you f*ck with my website");
