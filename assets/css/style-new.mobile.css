@@ -193,6 +193,10 @@
     .backdrop {
         height:35em;
     }
+
+    .backdrop-header {
+        height: 40em;
+    }
 }
 
 
