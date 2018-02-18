@@ -197,8 +197,27 @@
     .backdrop-header {
         height: 40em;
     }
+
+    .ticket-card p {
+        text-align: center;
+    }
+
+    .ticket-details-link button.uk-button.ticket-details {
+        font-size: 1.5em;
+        margin-top: 70px !important;
+        padding: 0.5em;
+        width: 100%;
+    }
+
+
 }
 
+@media only screen and (-webkit-device-pixel-ratio : 3)
+                   and (max-width: 1000px) {
+    div.committee-member-parent {
+       width: 100%;
+    }
+}
 
 @media only screen and (-webkit-device-pixel-ratio : 2)
                    and (max-width: 1000px)

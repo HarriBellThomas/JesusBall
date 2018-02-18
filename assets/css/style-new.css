@@ -4,11 +4,11 @@
  * Written by Harri Bell-Thomas <@harribellthomas>, October 2017 - June 2018
  */
 
-@font-face {
+/* @font-face {
   font-family: 'Avenir-Book';
   src: url('../fonts/avenirltstd-book-webfont.woff') format('woff'),
        url('../fonts/avenirltstd-book-webfont.ttf') format('truetype');
-}
+} */
 
 /* Aux */
 .gpu {
@@ -28,7 +28,8 @@
 
 html {
     background-color: #0f1114 !important;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 400;
     overflow-x: hidden;
     max-width: 100%;
@@ -43,7 +44,8 @@ body {
 }
 
 .uk-h1, .uk-h2, .uk-h3, .uk-h4, .uk-h5, .uk-h6, h1, h2, h3, h4, h5, h6 {
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
 }
 
 text {
@@ -55,7 +57,8 @@ img {
 }
 
 html body .uk-container .uk-card-title {
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
 }
 
 .dynamic-aurora-container {
@@ -298,7 +301,8 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 100;
     font-size: 3em;
     color: #fff;
@@ -316,7 +320,8 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 400;
     font-size: 2em;
     color: #fff;
@@ -348,7 +353,8 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 400;
     font-size: 2em;
     color: #fff;
@@ -387,7 +393,8 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 400;
     font-size: 2em;
     color: #fff;
@@ -405,7 +412,8 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 400;
     font-size: 2em;
     color: #fff;
@@ -423,7 +431,8 @@ html body .uk-container .uk-card-title {
     text-align: center;
     margin: 0 auto;
     display: block;
-    font-family: "Avenir-Book", sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
+    /* font-family: "Avenir-Book", sans-serif !important; */
     font-weight: 400;
     font-size: 2em;
     color: #fff;
@@ -451,7 +460,7 @@ html body .uk-container .uk-card-title {
     color: #fff;
     padding-bottom: 40px !important;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 #heading-paragraph {
