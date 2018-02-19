@@ -220,7 +220,7 @@
 }
 
 @media only screen and (-webkit-device-pixel-ratio : 2)
-                   and (max-width: 1000px)
+                   and (max-width: 1200px)
                    and (orientation potrait) {
     #below-fold {
         /* background-color: green; */
@@ -246,6 +246,10 @@
         width: 12px;
         height: 12px;
         margin-left: -6px;
+    }
+
+    .ticket-card p {
+        text-align: center;
     }
 }
 

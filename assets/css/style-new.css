@@ -407,6 +407,16 @@ html body .uk-container .uk-card-title {
     /* border-bottom: 1px solid #236d0d; */
 }
 
+#sponsors .uk-card-body,
+#sponsors .uk-card-title {
+    color: white;
+}
+
+#sponsors .uk-card-default {
+    background: none;
+    box-shadow: none;
+}
+
 #charities-title {
     padding: 70px 0px 30px 0px;
     text-align: center;
