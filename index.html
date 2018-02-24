@@ -8,8 +8,8 @@
     > -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Quattrocento:400,700" rel="stylesheet"> -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style-new.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style-new.mobile.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.mobile.css">
     <!-- <link rel="stylesheet" type="text/css" href="assets/css/auroral.min.css"> -->
     <!-- <meta name="viewport" content="width=device-width"> -->
     <!-- <link rel="stylesheet" href="assets/mdl/material.css"> -->
@@ -42,7 +42,10 @@
     <div id="header">
         <img id="saturation-layer" src="assets/images/saturation-layer.jpg" />
         <div data-depth="0.1" id="horse-container"><img id="horse" src="assets/images/horse-outline.png" /></div>
-        <div data-depth="0.2" id="particles-container" style="width:100%;height:100%;"><div id="particles-js" class="particles"></div></div>
+        <div data-depth="0.2" id="particles-container" class="standard-container" style="width:100%;height:100%;"><div id="particles-js" class="particles"></div></div>
+        <div data-depth="0.2" id="particles-container" class="nyan-container" style="width:100%;height:100%;display:none;">
+            <div id="particles-js-nyan" class="particles" style="background-color: rgba(4, 53, 100, 0.6); background-image: url(assets/images/nyan.gif); background-size: 58%; background-repeat: no-repeat; background-position: 0px 49%;"></div>
+        </div>
     </div>
 
     <div id="scroll-down"><a href="#aurora"><span></span></a></div>
@@ -577,6 +580,15 @@
     </div>
 
     <!-- Modals -->
+
+    <!-- This is the Cheet borealis -->
+    <div id="modal-cheet-borealis" style="z-index:999999;" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body" style="padding:0;">
+            <button class="uk-modal-close-default" type="button"  style="color:white;" uk-close></button>
+            <img src="assets/images/meme1.jpg" />
+        </div>
+    </div>
+
     <!-- <div id="null-modal-full" class="uk-modal-full" style="z-index:10000;" uk-modal>
         <div class="uk-modal-dialog">
             <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
@@ -597,6 +609,12 @@
     Your browser does not support the audio element.
 </audio>
 
+<audio loop id="background-music-nyan">
+    <source src="assets/music/nyan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+
 <script src="assets/js/particles.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.38/js/uikit-icons.min.js"></script>
@@ -604,6 +622,18 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script> -->
 <!-- <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> -->
 <script src="assets/js/imagesLoaded.min.js"></script>
+<script src="assets/js/cheet.min.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-114650639-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-114650639-1');
+</script>
+
 
 <script>
 
@@ -654,6 +684,7 @@ $(document).ready(function(){
             $(".play-text", this).text("Play the Soundscape");
         }
         else {
+            $("#background-music-nyan").trigger("pause");
             audio.trigger("play");
             $(".play-icon", this).attr("uk-icon", "icon: ban; ratio: 1");
             $(".play-text", this).text("Pause the Soundscape");
@@ -717,6 +748,29 @@ function easterEggs() {
     console.log("Congratulations! You found one of the free tickets hidden throughout the site.");
     console.log("To redeem, simply type 'redeemFreeTicket()'");
     console.log("");
+
+    cheet('b o r e a l i s', function() {
+        UIkit.modal($('#modal-cheet-borealis')).show();
+        var borealis = new Image();
+        borealis.src = "assets/images/meme2.gif";
+        $(borealis).imagesLoaded( function() {
+            $("#modal-cheet-borealis img").attr("src", "assets/images/meme2.gif");
+            $("#modal-cheet-borealis img").css("width", "100%");
+        });
+    });
+
+    cheet('n y a n', function() {
+        $("#particles-container.standard-container").hide();
+        $("#horse").attr("src", "assets/images/horse-outline-nyan.png");
+        $("#particles-container.nyan-container").show();
+        particlesJS.load('particles-js-nyan', 'assets/js/nyan-particles.json', function() {});
+        $('#background-music').trigger("pause");
+        $("#background-music-nyan").trigger("play");
+    });
+
+    cheet('s t o p', function() {
+        location.reload();
+    })
 }
 
 function redeemFreeTicket() {
