@@ -170,6 +170,11 @@
         padding: 40px;
     }
 
+    .committee-title {
+        font-size: 3.8em;
+        padding: 40px;
+    }
+
     .committee-presidents,
     .committee-rest {
         padding: 0 140px;

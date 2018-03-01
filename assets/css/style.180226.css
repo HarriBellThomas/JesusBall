@@ -560,6 +560,13 @@ html body .uk-container .uk-card-title {
     margin-top: -20px;
 }
 
+.committee-email {
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: -20px;
+}
+
 ._3em-padding {
     height: 3em;
     width: 100%;
